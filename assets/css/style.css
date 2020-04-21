@@ -1,3 +1,8 @@
+/* Global value for my color */
+:root {
+    --my-color: #01579b;
+  }
+
 body {
     display: flex;
     min-height: 100vh;
@@ -8,8 +13,35 @@ nav {
     padding-left: 20px;
 }
 
+li {
+    font-family: serif;
+}
+
 main {
     flex: 1 0 auto;
+}
+
+figure {
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+a {
+    color: var(--my-color);
+}
+
+/* input field, label, and icon focus color */
+.input-field input:focus + label,
+.input-field .prefix.active,
+.input-field textarea:focus:not([readonly])+label {
+    color: var(--my-color) !important;
+}
+
+/* label underline focus color */
+.input-field input:focus,
+.input-field textarea:focus:not([readonly]) {
+    border-bottom: 1px solid var(--my-color) !important;
+    box-shadow: 0 1px 0 0 var(--my-color) !important;
 }
 
 /* Define a background color, in case there is an issue accessing my background image tile */
@@ -29,6 +61,11 @@ main {
 .my-h1 {
     font-family: serif;
     padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.my-row {
+    padding-bottom: 20px;   
 }
 
 .my-image {
@@ -41,6 +78,15 @@ main {
 .my-para {
     color: gray;
     font-size: 18px;
+}
+
+.my-btn {
+    background-color: var(--my-color);
+    margin-bottom: 20px;
+}
+
+.my-btn:hover {
+    background-color: rgb(93, 0, 108);
 }
 
 .my-page-footer {
