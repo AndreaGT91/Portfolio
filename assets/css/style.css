@@ -3,24 +3,28 @@
     --my-color: #01579b;
   }
 
+/* From Materialize documentation */
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
 
-nav {
-    padding-left: 20px;
-}
-
-li {
-    font-family: serif;
-}
-
 main {
     flex: 1 0 auto;
 }
 
+/* Brand name too close to left edge */
+nav {
+    padding-left: 20px;
+}
+
+/* Serifs for list items and headings, Sans-serif for everything else */
+li {
+    font-family: serifs;
+}
+
+/* Need bottom margin for space between when wrapping */
 figure {
     margin: 0px 0px 20px 0px;
     text-align: center;
@@ -51,6 +55,7 @@ a {
     background-repeat: round;
 }
 
+/* Content in white space, on gray background */
 .my-container {
     background-color: white;
     position: relative;
@@ -58,6 +63,7 @@ a {
     padding-right: 10px;
 }
 
+/* Serifs for list items and headings, Sans-serif for everything else */
 .my-h1 {
     font-family: serif;
     padding-top: 10px;

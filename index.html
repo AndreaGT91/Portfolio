@@ -18,27 +18,27 @@
     <div class="navbar-fixed">
         <nav class="light-blue darken-4">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo left">Andrea Bentley</a>
+                <a href="#about" class="brand-logo left" id="brand">Andrea Bentley</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
                     <i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li class="active"><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="active" id="main-about"><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li class="active"><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+    <ul class="sidenav sidenav-close" id="mobile-demo">
+        <li class="active" id="side-about"><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 
     <main class="my-background">
         <div class="container my-container">
-            <section id="about" hidden>
+            <section id="about">
                 <h1 class="light-blue-text text-darken-4 my-h1">About Me</h1>
                 <hr>
                 <br>
@@ -113,7 +113,7 @@
                 </div>
             </section> <!-- Portfolio -->
 
-            <section id="contact">
+            <section id="contact" hidden>
                 <h1 class="light-blue-text text-darken-4 my-h1">Contact</h1>
                 <hr>
                 <br>
@@ -165,11 +165,6 @@
     <!-- Link my JavaScript -->
     <script src="./assets/js/script.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('.sidenav').sidenav({ edge: "right" });
-        });
-    </script>
 </body>
 
 </html>
