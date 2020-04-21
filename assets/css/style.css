@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+nav {
+    padding-left: 20px;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Define a background color, in case there is an issue accessing my background image tile */
+.my-background {
+    background-color: lightgray;
+    background-image: url("../images/Background-gray-textured.jpg");
+    background-repeat: round;
+}
+
+.my-container {
+    background-color: white;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.my-h1 {
+    font-family: serif;
+    padding-top: 10px;
+}
+
+.my-image {
+    max-width: 300px;
+    max-height: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+.my-para {
+    color: gray;
+    font-size: 18px;
+}
+
+.my-page-footer {
+    padding-top: 0px;
+}

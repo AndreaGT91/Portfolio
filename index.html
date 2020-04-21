@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Bentley</title>
+
+    <!-- Materialize compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Need hamburger menu icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Link my CSS styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="light-blue darken-4">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Andrea Bentley</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
+                    <i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li class="active"><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <main class="my-background">
+        <div class="container my-container">          
+            <h1 class="light-blue-text text-darken-4 my-h1">About Me</h1>
+            <hr>
+            <br>
+            <div class="row">
+                <div class="col m12">
+                    <img class="responsive-img my-image" src="./assets/images/Profile.jpg" alt="Andrea Bentley's picture"> 
+                    <p class="my-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ab, suscipit distinctio nihil assumenda quo. Dolorem sint aliquam cumque? Culpa, modi fugit! Numquam fugit dicta harum magnam similique, in laboriosam!
+                        Deserunt ex architecto similique ullam ipsa minima temporibus. Ea reprehenderit aperiam numquam iste, nisi soluta beatae cum, recusandae assumenda eius veritatis veniam reiciendis aliquam blanditiis atque ut sit obcaecati perspiciatis.
+                        Culpa, porro assumenda libero suscipit placeat cupiditate, maiores molestiae, consequatur molestias blanditiis ipsam fuga eaque perferendis. Facere dignissimos necessitatibus quasi, maxime ratione, ea nemo labore commodi suscipit iusto facilis atque.
+                        Quaerat mollitia quisquam repellendus, quae tempore magnam sapiente dolorem architecto provident culpa saepe voluptate, eos perspiciatis minima cupiditate magni esse earum neque amet reiciendis cumque. Esse reprehenderit saepe perspiciatis nisi?
+                        Vitae cumque enim iste perspiciatis.</p>
+                        <p class="my-para"> Ut iste saepe aliquid maxime eligendi! Accusamus impedit libero porro illo explicabo, neque dolorum animi laborum ad quidem expedita cum aliquid ut fuga fugit nostrum.
+                            Nostrum dolorem aliquam aspernatur ducimus voluptatibus corporis ea nulla beatae blanditiis commodi. Velit, reiciendis quas. Blanditiis cumque, laborum voluptatibus quisquam reprehenderit perferendis aliquid voluptatem accusantium eveniet ea provident. Eius, voluptatibus.
+                            Omnis eaque reiciendis iusto sint optio mollitia, rem nobis expedita eligendi ab fugiat, autem, asperiores enim. Corporis officiis velit dicta cumque? Officia atque unde quisquam. Aperiam consequuntur architecto quas aliquid.
+                            Dolor quod cum fugiat sit inventore officiis! Doloremque eos accusamus quos est quisquam fugiat quod et pariatur deleniti cumque dolor expedita repellat, minima, tempora ut vitae. Unde laborum minus nesciunt.
+                            Voluptatibus laborum assumenda cum officiis architecto iste ex doloremque rerum quaerat odio dolor repellendus obcaecati modi, explicabo ipsam animi corporis doloribus nisi eius aspernatur pariatur. Quis eligendi illum ex officiis!
+                            Quibusdam, voluptatum mollitia id exercitationem placeat similique ab possimus perferendis praesentium velit impedit iste quo nisi eum sequi in expedita qui repellat. Sed ratione at voluptatibus distinctio doloribus quis animi.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer light-blue darken-4 my-page-footer">
+        <div class="footer-copyright">
+            <div class="container center">Copyright &copy; 2020 Bentley Tech</div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- This prevents passive event violation, but causes error in materialize -->
+    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+    <!-- Link my JavaScript -->
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav({edge: "right"});
+        });
+    </script>
+</body>
+
+</html>
