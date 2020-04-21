@@ -53,6 +53,7 @@ a {
     background-color: lightgray;
     background-image: url("../images/Background-gray-textured.jpg");
     background-repeat: round;
+    width: 100% !important; /* mobile was not displaying properly without this */
 }
 
 /* Content in white space, on gray background */
