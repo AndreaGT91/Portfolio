@@ -2,158 +2,161 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Bentley</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Andrea Bentley</title>
 
-    <!-- Materialize compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Need hamburger menu icon -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Link my CSS styles -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+   <!-- Materialize compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!-- Need hamburger menu icon -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Link my CSS styles -->
+   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="navbar-fixed">
-        <nav class="light-blue darken-4">
-            <div class="nav-wrapper">
-                <a href="#about" class="brand-logo left" id="brand">Andrea Bentley</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
-                    <i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li class="active" id="main-about"><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+   <div class="navbar-fixed">
+      <nav class="light-blue darken-4">
+         <div class="nav-wrapper">
+            <a href="#about" class="brand-logo left" id="brand">Andrea Bentley</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
+               <i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+               <li class="active" id="main-about"><a href="#about">About</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+
+   <ul class="sidenav sidenav-close" id="mobile-demo">
+      <li class="active" id="side-about"><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+   </ul>
+
+   <main class="my-background">
+      <div class="container my-container">
+         <section id="about">
+            <h1 class="light-blue-text text-darken-4 my-h1">About</h1>
+            <hr>
+            <br>
+            <div class="row">
+               <div class="col s12">
+                  <figure>
+                     <a href="https://docs.google.com/document/d/1-3je2nVzHTrSlhOCHRWfCUwaqEcqY_QSkqLURkigUzA/edit?usp=sharing"
+                        target="_blank">
+                        <img class="my-image" src="./assets/images/Profile.jpg" alt="Andrea Bentley's picture"></a>
+                     <a href="https://docs.google.com/document/d/1-3je2nVzHTrSlhOCHRWfCUwaqEcqY_QSkqLURkigUzA/edit?usp=sharing"
+                        target="_blank">
+                        <figcaption>Resume</figcaption>
+                     </a>
+                  </figure>
+                  <p class="my-para">An experienced software developer, looking to enter the world of web
+                     development. Currently expanding the knowledge gained earning a B.S. in Information and
+                     Computer Science from the Georgia Institute of Technology by taking their Coding Boot Camp.
+                     In August 2020, will receive a Certificate of Completion in Web Development from Georgia
+                     Tech Professional Education. Professional experience in object-oriented programming, rapid
+                     application development tools, and collaborating with a team to create a finished product.
+                     Main area of interest is UI/UX, with strong analytical skills that are well-suited for
+                     full-stack development.</p>
+               </div>
             </div>
-        </nav>
-    </div>
+         </section> <!-- About -->
 
-    <ul class="sidenav sidenav-close" id="mobile-demo">
-        <li class="active" id="side-about"><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+         <section id="portfolio" hidden>
+            <h1 class="light-blue-text text-darken-4 my-h1">Portfolio</h1>
+            <hr>
+            <div class="row">
+               <h6 class="light-blue-text text-darken-4 center-align">Click on image for deployed application;
+                  click on caption for GitHub repository</h6>
+            </div>
+            <div class="row my-row">
+               <div class="col s12 m6 l4">
+                  <figure>
+                     <a href="https://andreagt91.github.io/Park-Planner/" target="_blank">
+                        <img class="my-image" src="./assets/images/Park-Planner.png" alt="Park Planner website"></a>
+                     <a href="https://github.com/AndreaGT91/Park-Planner" target="_blank">
+                        <figcaption>Project Planner</figcaption>
+                     </a>
+                  </figure>
+               </div>
+               <div class="col s12 m6 l4">
+                  <figure>
+                     <a href="https://andreagt91.github.io/Homework6/" target="_blank">
+                        <img class="my-image" src="./assets/images/Weather-Dashboard.png"
+                           alt="Weather Dashboard website"></a>
+                     <a href="https://github.com/AndreaGT91/Homework6" target="_blank">
+                        <figcaption>Weather Dashboard</figcaption>
+                     </a>
+                  </figure>
+               </div>
+               <div class="col s12 m6 l4">
+                  <figure>
+                     <a href="https://andreagt91.github.io/Homework4/" target="_blank">
+                        <img class="my-image" src="./assets/images/Coding-Quiz.png" alt="Coding Quiz website"></a>
+                     <a href="https://github.com/AndreaGT91/Homework4" target="_blank">
+                        <figcaption>Coding Quiz</figcaption>
+                     </a>
+                  </figure>
+               </div>
+            </div>
+         </section> <!-- Portfolio -->
 
-    <main class="my-background">
-        <div class="container my-container">
-            <section id="about">
-                <h1 class="light-blue-text text-darken-4 my-h1">About</h1>
-                <hr>
-                <br>
-                <div class="row">
-                    <div class="col s12">
-                        <figure>
-                            <a href="https://docs.google.com/document/d/1-3je2nVzHTrSlhOCHRWfCUwaqEcqY_QSkqLURkigUzA/edit?usp=sharing"
-                                target="_blank">
-                                <img class="my-image" src="./assets/images/Profile.jpg"
-                                    alt="Andrea Bentley's picture"></a>
-                            <a href="https://docs.google.com/document/d/1-3je2nVzHTrSlhOCHRWfCUwaqEcqY_QSkqLURkigUzA/edit?usp=sharing"
-                                target="_blank">
-                                <figcaption>Resume</figcaption>
-                            </a>
-                        </figure>
-                        <p class="my-para">An experienced software developer, looking to enter the world of web
-                            development. Currently expanding the knowledge gained earning a B.S. in Information and
-                            Computer Science from the Georgia Institute of Technology by taking their Coding Boot Camp.
-                            In August 2020, will receive a Certificate of Completion in Web Development from Georgia
-                            Tech Professional Education. Professional experience in object-oriented programming, rapid
-                            application development tools, and collaborating with a team to create a finished product.
-                            Main area of interest is UI/UX, with strong analytical skills that are well-suited for
-                            full-stack development.</p>
-                    </div>
-                </div>
-            </section> <!-- About -->
+         <section id="contact" hidden>
+            <h1 class="light-blue-text text-darken-4 my-h1">Contact</h1>
+            <hr>
+            <br>
+            <div class="row">
+               <form class="col s12" action="mailto:andrea@bentleytech.com">
+                  <div class="row">
+                     <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate" required="" aria-required="true" disabled>
+                        <label for="icon_prefix">Name</label>
+                        <span class="helper-text" data-error="Name is required."></span>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s12">
+                        <i class="material-icons prefix">alternate_email</i>
+                        <input id="icon_email" type="email" class="validate" required="" aria-required="true" disabled>
+                        <label for="icon_email">Email</label>
+                        <span class="helper-text" data-error="Valid email address is required."></span>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <textarea id="textarea1" class="materialize-textarea" disabled></textarea>
+                        <label for="textarea1">Message</label>
+                     </div>
+                  </div>
+                  <button class="btn waves-effect my-btn" type="submit" name="action">Send
+                     <i class="material-icons right">send</i>
+                  </button>
+                  <p class="temp-para">Form is currently disabled. Click "Send" to open your email client.</p>
+               </form>
+            </div>
+         </section> <!-- Contact -->
+      </div> <!-- container -->
+   </main>
 
-            <section id="portfolio" hidden>
-                <h1 class="light-blue-text text-darken-4 my-h1">Portfolio</h1>
-                <hr>
-                <div class="row">
-                    <h6 class="light-blue-text text-darken-4 center-align">Click on image for deployed application;
-                        click on caption for GitHub repository</h6>
-                </div>
-                <div class="row my-row">
-                    <div class="col s12 m6 l4">
-                        <figure>
-                            <a href="https://andreagt91.github.io/Park-Planner/" target="_blank">
-                                <img class="my-image" src="./assets/images/Park-Planner.png" alt="Park Planner website"></a>
-                            <a href="https://github.com/AndreaGT91/Park-Planner" target="_blank">
-                                <figcaption>Project Planner</figcaption></a>
-                        </figure>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <figure>
-                            <a href="https://andreagt91.github.io/Homework6/" target="_blank">
-                                <img class="my-image" src="./assets/images/Weather-Dashboard.png" alt="Weather Dashboard website"></a>
-                            <a href="https://github.com/AndreaGT91/Homework6" target="_blank">
-                                <figcaption>Weather Dashboard</figcaption></a>
-                        </figure>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <figure>
-                            <a href="https://andreagt91.github.io/Homework4/" target="_blank">
-                                <img class="my-image" src="./assets/images/Coding-Quiz.png" alt="Coding Quiz website"></a>
-                            <a href="https://github.com/AndreaGT91/Homework4" target="_blank">
-                                <figcaption>Coding Quiz</figcaption></a>
-                        </figure>
-                    </div>
-                </div>
-            </section> <!-- Portfolio -->
+   <footer class="page-footer light-blue darken-4 my-page-footer">
+      <div class="footer-copyright">
+         <div class="container center">Copyright &copy; 2020 Bentley Tech</div>
+      </div>
+   </footer>
 
-            <section id="contact" hidden>
-                <h1 class="light-blue-text text-darken-4 my-h1">Contact</h1>
-                <hr>
-                <br>
-                <div class="row">
-                    <form class="col s12" action="mailto:andrea@bentleytech.com">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate" required="" aria-required="true" disabled>
-                                <label for="icon_prefix">Name</label>
-                                <span class="helper-text" data-error="Name is required."></span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">alternate_email</i>
-                                <input id="icon_email" type="email" class="validate" required="" aria-required="true" disabled>
-                                <label for="icon_email">Email</label>
-                                <span class="helper-text" data-error="Valid email address is required."></span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">email</i>
-                                <textarea id="textarea1" class="materialize-textarea" disabled></textarea>
-                                <label for="textarea1">Message</label>
-                            </div>
-                        </div>
-                        <button class="btn waves-effect my-btn" type="submit" name="action">Send
-                            <i class="material-icons right">send</i>
-                        </button>
-                        <p class="temp-para">Form is currently disabled. Click "Send" to open your email client.</p>
-                    </form>
-                </div>
-            </section> <!-- Contact -->
-        </div> <!-- container -->
-    </main>
-
-    <footer class="page-footer light-blue darken-4 my-page-footer">
-        <div class="footer-copyright">
-            <div class="container center">Copyright &copy; 2020 Bentley Tech</div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- This prevents passive event violation, but causes error in materialize -->
-    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
-    <!-- Link my JavaScript -->
-    <script src="./assets/js/script.js"></script>
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <!-- This prevents passive event violation, but causes error in materialize -->
+   <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+   <!-- Link my JavaScript -->
+   <script src="./assets/js/script.js"></script>
 
 </body>
 
