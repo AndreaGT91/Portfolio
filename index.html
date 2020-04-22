@@ -79,20 +79,23 @@
                             <a href="https://andreagt91.github.io/Park-Planner/" target="_blank">
                                 <img class="my-image" src="./assets/images/Park-Planner.png" alt="Park Planner website"></a>
                             <a href="https://github.com/AndreaGT91/Park-Planner" target="_blank">
-                                <figcaption>Project Planner</figcaption>
-                            </a>
+                                <figcaption>Project Planner</figcaption></a>
                         </figure>
                     </div>
                     <div class="col s12 m6 l4">
                         <figure>
-                            <img class="my-image" src="https://via.placeholder.com/300" alt="Placeholder image">
-                            <figcaption>Caption goes here</figcaption>
+                            <a href="https://andreagt91.github.io/Homework6/" target="_blank">
+                                <img class="my-image" src="./assets/images/Weather-Dashboard.png" alt="Weather Dashboard website"></a>
+                            <a href="https://github.com/AndreaGT91/Homework6" target="_blank">
+                                <figcaption>Weather Dashboard</figcaption></a>
                         </figure>
                     </div>
                     <div class="col s12 m6 l4">
                         <figure>
-                            <img class="my-image" src="https://via.placeholder.com/300" alt="Placeholder image">
-                            <figcaption>Caption goes here</figcaption>
+                            <a href="https://andreagt91.github.io/Homework4/" target="_blank">
+                                <img class="my-image" src="./assets/images/Coding-Quiz.png" alt="Coding Quiz website"></a>
+                            <a href="https://github.com/AndreaGT91/Homework4" target="_blank">
+                                <figcaption>Coding Quiz</figcaption></a>
                         </figure>
                     </div>
                 </div>
@@ -107,28 +110,30 @@
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" class="validate">
+                                <input id="icon_prefix" type="text" class="validate" required="" aria-required="true" disabled>
                                 <label for="icon_prefix">Name</label>
+                                <span class="helper-text" data-error="Name is required."></span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">alternate_email</i>
-                                <input id="icon_email" type="email" class="validate">
+                                <input id="icon_email" type="email" class="validate" required="" aria-required="true" disabled>
                                 <label for="icon_email">Email</label>
-                                <span class="helper-text" data-error="Invalid email"></span>
+                                <span class="helper-text" data-error="Valid email address is required."></span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">email</i>
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <textarea id="textarea1" class="materialize-textarea" disabled></textarea>
                                 <label for="textarea1">Message</label>
                             </div>
                         </div>
                         <button class="btn waves-effect my-btn" type="submit" name="action">Send
                             <i class="material-icons right">send</i>
                         </button>
+                        <p class="temp-para">Form is currently disabled. Click "Send" to open your email client.</p>
                     </form>
                 </div>
             </section> <!-- Contact -->

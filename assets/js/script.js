@@ -1,6 +1,7 @@
 const about = "About";
 const portfolio = "Portfolio";
 const contact = "Contact";
+
 var screenSizeSwitch = 993; // Size at which hamburger menu appears
 
 $(document).ready(function () {
@@ -9,10 +10,12 @@ $(document).ready(function () {
    $("#brand").click(clickBrand);
 });
 
+// If menu item clicked, send that list item to display
 function clickMenu() {
    pageDisplay($(this));
 }
 
+// If name is clicked, send "about" list item to display
 function clickBrand() {
    // If screen is small enough for hamburger menu, use that list item; otherwise, use main list item
    if ($(document).width() < screenSizeSwitch) {
@@ -23,7 +26,7 @@ function clickBrand() {
    }
 }
 
-// On click handler for list items
+// Shows correct section, hides other two
 function pageDisplay(listItem) {
    // Update active status for menu items
    $(".active").removeClass("active");
