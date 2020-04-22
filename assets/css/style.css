@@ -86,7 +86,9 @@ a {
     font-size: 18px;
 }
 
-.my-btn {
+.my-btn,
+.my-btn:focus,
+.my-btn:active {
     background-color: var(--my-color);
     margin-bottom: 20px;
 }
