@@ -8,8 +8,10 @@
 
    <!-- Materialize compiled and minified CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <!-- Need hamburger menu icon -->
+   <!-- Icons -->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <!-- Link my CSS styles -->
    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -72,7 +74,7 @@
                <h6 class="light-blue-text text-darken-4 center-align">Click on image for deployed application;
                   click on caption for GitHub repository</h6>
             </div>
-            <div class="row my-row">
+            <div class="row">
                <div class="col s12 m6 l4">
                   <figure>
                      <a href="https://andreagt91.github.io/Park-Planner/" target="_blank">
@@ -109,11 +111,46 @@
             <hr>
             <br>
             <div class="row">
-               <form class="col s12" action="mailto:andrea@bentleytech.com">
+              <div class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <a href="mailto:andrea@bentleytech.com" title="Email">
+                      <i class="material-icons prefix">alternate_email</i>
+                      <input disabled value="andrea@bentleytech.com" type="email">
+                    </a>                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <a href="tel:+1-404-403-5753" title="Phone">
+                    <i class="material-icons prefix">smartphone</i>
+                    <input disabled value="404.403.5753" type="tel">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <a href="https://www.linkedin.com/in/andrea-c-bentley/" title="LinkedIn" target="_blank">
+                      <i class="fa fa-linkedin prefix" style="font-size:24px"></i>
+                      <input disabled value="Andrea-C-Bentley" type="url">
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <a href="https://github.com/AndreaGT91" title="GitHub" target="_blank">
+                      <i class="fa fa-github prefix" style="font-size:36px"></i>
+                      <input disabled value="AndreaGT91" type="url">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+               <!-- Will use this when I know how to implement sending an email
+                <form class="col s12">
                   <div class="row">
                      <div class="input-field col s12">
                         <i class="material-icons prefix">account_circle</i>
-                        <input id="icon_prefix" type="text" class="validate" required="" aria-required="true" disabled>
+                        <input id="icon_prefix" type="text" class="validate" required="" aria-required="true">
                         <label for="icon_prefix">Name</label>
                         <span class="helper-text" data-error="Name is required."></span>
                      </div>
@@ -121,7 +158,7 @@
                   <div class="row">
                      <div class="input-field col s12">
                         <i class="material-icons prefix">alternate_email</i>
-                        <input id="icon_email" type="email" class="validate" required="" aria-required="true" disabled>
+                        <input id="icon_email" type="email" class="validate" required="" aria-required="true">
                         <label for="icon_email">Email</label>
                         <span class="helper-text" data-error="Valid email address is required."></span>
                      </div>
@@ -129,15 +166,14 @@
                   <div class="row">
                      <div class="input-field col s12">
                         <i class="material-icons prefix">email</i>
-                        <textarea id="textarea1" class="materialize-textarea" disabled></textarea>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
                         <label for="textarea1">Message</label>
                      </div>
                   </div>
                   <button class="btn waves-effect my-btn" type="submit" name="action">Send
                      <i class="material-icons right">send</i>
                   </button>
-                  <p class="temp-para">Form is currently disabled. Click "Send" to open your email client.</p>
-               </form>
+               </form> -->
             </div>
          </section> <!-- Contact -->
       </div> <!-- container -->
@@ -145,7 +181,7 @@
 
    <footer class="page-footer light-blue darken-4 my-page-footer">
       <div class="footer-copyright">
-         <div class="container center">Copyright &copy; 2020 Bentley Tech</div>
+         <div class="container center">&copy; 2020 Andrea Bentley</div>
       </div>
    </footer>
 

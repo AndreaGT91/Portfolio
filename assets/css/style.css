@@ -73,10 +73,6 @@ a {
     margin-bottom: 0px;
 }
 
-.my-row {
-    padding-bottom: 20px;   
-}
-
 .my-image {
     max-width: 300px;
     max-height: 300px;
@@ -85,13 +81,6 @@ a {
 .my-para {
     color: gray;
     font-size: 18px;
-}
-
-.temp-para {
-    color: white;
-    background-color: rgb(93, 0, 108);
-    font-size: 18px;
-    padding-left: 10px;
 }
 
 .my-btn,
