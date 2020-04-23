@@ -1,6 +1,8 @@
 /* Global value for my color */
 :root {
-    --my-color: #01579b;
+    --main-color: #01579b;
+    --text-color: rgb(96, 96, 96);
+    --highlight-color: rgb(93, 0, 108);
   }
 
 /* From Materialize documentation */
@@ -32,22 +34,33 @@ figure {
     float: left;
 }
 
+p {
+  color: var(--text-color);
+  font-size: 18px;
+  margin-top: 0px;
+}
+
 a {
-    color: var(--my-color);
+    color: var(--main-color);
+}
+
+input:disabled {
+  color: var(--text-color) !important;
+  font-size: 20px !important  ;
 }
 
 /* input field, label, and icon focus color */
 .input-field input:focus + label,
 .input-field .prefix.active,
 .input-field textarea:focus:not([readonly])+label {
-    color: var(--my-color) !important;
+    color: var(--main-color) !important;
 }
 
 /* label underline focus color */
 .input-field input:focus,
 .input-field textarea:focus:not([readonly]) {
-    border-bottom: 1px solid var(--my-color) !important;
-    box-shadow: 0 1px 0 0 var(--my-color) !important;
+    border-bottom: 1px solid var(--main-color) !important;
+    box-shadow: 0 1px 0 0 var(--main-color) !important;
 }
 
 /* Define a background color, in case there is an issue accessing my background image tile */
@@ -77,23 +90,18 @@ a {
 .my-image {
     max-width: 300px;
     max-height: 300px;
-    border: 3px solid var(--my-color);
+    border: 3px solid var(--main-color);
   }
-
-.my-para {
-    color: gray;
-    font-size: 18px;
-}
 
 .my-btn,
 .my-btn:focus,
 .my-btn:active {
-    background-color: var(--my-color);
+    background-color: var(--main-color);
     margin-bottom: 20px;
 }
 
 .my-btn:hover {
-    background-color: rgb(93, 0, 108);
+    background-color: var(--highlight-color);
 }
 
 .my-page-footer {

@@ -1,44 +1,23 @@
-const about = "About";
-const portfolio = "Portfolio";
-const contact = "Contact";
-
-var screenSizeSwitch = 993; // Size at which hamburger menu appears
+const screenSizeSwitch = 993; // Size at which hamburger menu appears
 
 $(document).ready(function () {
    $(".sidenav").sidenav({edge: "right"});
-   $("li").click(clickMenu);
-   $("#brand").click(clickBrand);
+   $("li").click(pageDisplay);
 });
 
-// If menu item clicked, send that list item to display
-function clickMenu() {
-   pageDisplay($(this));
-}
-
-// If name is clicked, send "about" list item to display
-function clickBrand() {
-   // If screen is small enough for hamburger menu, use that list item; otherwise, use main list item
-   if ($(document).width() < screenSizeSwitch) {
-      pageDisplay($("#side-about"));
-   }
-   else {
-      pageDisplay($("#main-about"));
-   }
-}
-
 // Shows correct section, hides other two
-function pageDisplay(listItem) {
+function pageDisplay() {
    // Update active status for menu items
    $(".active").removeClass("active");
-   listItem.addClass("active");
+   $(this).addClass("active");
 
    // Make selected section not hidden; hide other two
-   if (listItem.text() === portfolio) {
+   if ($(this).text() === "Portfolio") {
       $('#portfolio').removeAttr("hidden");
       $('#contact').attr("hidden", true);
       $('#about').attr("hidden", true);
    }
-   else if (listItem.text() === contact) {
+   else if ($(this).text() === "Contact") {
       $('#contact').removeAttr("hidden");
       $('#portfolio').attr("hidden", true);
       $('#about').attr("hidden", true);
