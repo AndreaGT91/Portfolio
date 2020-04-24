@@ -27,7 +27,7 @@ li {
     font-family: serifs;
 }
 
-/* Need bottom margin for space between when wrapping */
+/* Need right and bottom margin for space between when wrapping */
 figure {
     margin: 0px 20px 20px 0px;
     text-align: center;
@@ -42,6 +42,12 @@ p {
 
 a {
     color: var(--main-color);
+}
+
+img {
+  border: 3px solid var(--main-color);
+  width: 300px;
+  height: 300px;
 }
 
 input:disabled {
@@ -88,9 +94,7 @@ input:disabled {
 }
 
 .my-image {
-    max-width: 300px;
-    max-height: 300px;
-    border: 3px solid var(--main-color);
+    height: 200px;
   }
 
 .my-btn,
