@@ -98,7 +98,7 @@ input:disabled {
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 850px;
+    max-width: 1024px;
 }
 
 /* Serifs for list items and headings, Sans-serif for everything else */

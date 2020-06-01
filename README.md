@@ -3,6 +3,7 @@ My personal portfolio
 
 # Deployed appliation links
 https://andreagt91.github.io/Portfolio/
+
 http://bentleytech.com/
 
 # Unit 08 Project 1 Homework: Professional Materials
