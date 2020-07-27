@@ -2,7 +2,6 @@
 :root {
     --main-color: #01579b;
     --text-color: rgb(96, 96, 96);
-    --highlight-color: rgb(93, 0, 108);
   }
 
 /* From Materialize documentation */
@@ -70,20 +69,6 @@ input:disabled {
   font-size: 20px !important  ;
 }
 
-/* input field, label, and icon focus color */
-.input-field input:focus + label,
-.input-field .prefix.active,
-.input-field textarea:focus:not([readonly])+label {
-    color: var(--main-color) !important;
-}
-
-/* label underline focus color */
-.input-field input:focus,
-.input-field textarea:focus:not([readonly]) {
-    border-bottom: 1px solid var(--main-color) !important;
-    box-shadow: 0 1px 0 0 var(--main-color) !important;
-}
-
 /* Define a background color, in case there is an issue accessing my background image tile */
 .my-background {
     background-color: lightgray;
@@ -106,17 +91,6 @@ input:disabled {
     font-family: serif;
     padding-top: 10px;
     margin-bottom: 0px;
-}
-
-.my-btn,
-.my-btn:focus,
-.my-btn:active {
-    background-color: var(--main-color);
-    margin-bottom: 20px;
-}
-
-.my-btn:hover {
-    background-color: var(--highlight-color);
 }
 
 .my-page-footer {

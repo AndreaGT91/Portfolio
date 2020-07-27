@@ -1,5 +1,3 @@
-const screenSizeSwitch = 993; // Size at which hamburger menu appears
-
 $(document).ready(function () {
    $(".sidenav").sidenav({edge: "right"});
    $("li").click(pageDisplay);
